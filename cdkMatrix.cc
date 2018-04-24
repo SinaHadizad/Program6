@@ -116,13 +116,13 @@ int main()
 
       ostringstream convert4;
       convert4 << static_cast<int>(myRecord->strLength);
-      string length = convert4.str();
+      string length = "strlen: " + convert4.str();
       const char* lengthPrint = length.c_str();
     
       i++;
 
-      setCDKMatrixCell(myMatrix, i+1, 1, phrasePrint); //display values from data class into matrix
-      setCDKMatrixCell(myMatrix, i+1, 2, lengthPrint);
+      setCDKMatrixCell(myMatrix, i+1, 1, lengthPrint); //display values from data class into matrix
+      setCDKMatrixCell(myMatrix, i+1, 2, phrasePrint);
      
       binInfile.read((char*) myRecord, sizeof(BinaryFileRecord)); //required to move buffer
     }
