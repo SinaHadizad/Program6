@@ -1,2 +1,3 @@
-# Program6
-Unix Program 6
+//Sina Hadizad
+//srh160630@utdallas.edu
+//CS3377.002
